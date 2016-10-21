@@ -13,8 +13,16 @@
   font-family: 'Yatra One', serif;
 }
 
-.project a {
+.project {
   text-align: center;
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project a:hover {
   text-decoration: none;
   color: inherit;
 }
