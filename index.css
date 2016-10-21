@@ -5,12 +5,8 @@
 }
 
 #user-title {
-  left: 0;
-  line-height: 200px;
-  margin: auto;
-  margin-top: -100px;
   position: absolute;
-  top: 50%;
+  top: 100px;
   width: 100%;
   text-align: center;
   color: white;
