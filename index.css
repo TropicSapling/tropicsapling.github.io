@@ -13,10 +13,16 @@
   font-family: 'Yatra One', serif;
 }
 
+.normal-title {
+  text-align: center;
+  font-family: 'Yatra One', serif;
+  margin-top: 50px;
+  margin-bottom: 40px
+}
+
 .project {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .project a {
