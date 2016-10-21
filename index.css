@@ -13,8 +13,8 @@
   font-family: 'Yatra One', serif;
 }
 
-.project {
+.project a {
   text-align: center;
   text-decoration: none;
-  color: #373a3c;
+  color: inherit;
 }
