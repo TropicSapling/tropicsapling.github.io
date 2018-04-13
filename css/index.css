@@ -1,7 +1,6 @@
 /* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
 ::-webkit-scrollbar {
     width: 10px;
-    border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -9,11 +8,11 @@
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #aaa;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #777;
 }
 
 #img-wrapper {
