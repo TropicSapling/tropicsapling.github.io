@@ -24,7 +24,7 @@ var shown = false;
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
 	if(!shown) {
-		if(scroll > $(window).height() * 0.6) {
+		if(scroll > $(window).height() * 0.75) {
 			$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
 				$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
 					$("#projects h2:eq(2)").animate({width:'toggle'}, 'fast', function() {
@@ -32,7 +32,7 @@ $(window).scroll(function(e) {
 					});
 				});
 			});
-		} else if(scroll > $(window).height() * 0.75) {
+		} else if(scroll > $(window).height() * 0.6) {
 			$("#projects h1").animate({width:'toggle'}, 'fast');
 			
 			shown = true;
