@@ -22,6 +22,7 @@ $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
 	if(!shown) {
 		if(scroll > 300) {
+			$("#projects h1").animate({width:'toggle'}, 0);
 			$(".project").animate({width:'toggle'}, 0);
 			$("#projects h1").animate({width:'toggle'}, 'fast', function() {
 				$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
@@ -34,10 +35,6 @@ $(window).scroll(function(e) {
 			});
 			
 			shown = true;
-		} else if(scroll > 136) {
-			$("#projects h2:eq(0)").animate({width:'toggle'}, 0);
-		} else if(scroll > 56) {
-			$("#projects h1").animate({width:'toggle'}, 0);
 		}
 	}
 });
