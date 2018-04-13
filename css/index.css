@@ -51,6 +51,10 @@
   align-items: center;
 }
 
+#projects.wrapper {
+    top: 100%;
+}
+
 #user-title {
   color: white;
   font-size: 96px;
