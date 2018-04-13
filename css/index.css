@@ -60,6 +60,7 @@
     top: 100%;
 	padding-left: 10rem;
 	padding-right: 10rem;
+	grid-gap: 2rem;
 }
 
 #user-title {
