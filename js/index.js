@@ -1,5 +1,5 @@
 $(function() {
-    setTimeout(switchSlide, 5000);
+    setTimeout(switchSlide2, 5000);
 });
 
 function switchSlide() {
