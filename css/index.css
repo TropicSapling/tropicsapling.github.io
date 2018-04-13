@@ -77,21 +77,27 @@
 }
 
 .project {
-  text-align: center;
-  margin-bottom: 40px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	background-size: cover;
 }
 
-.project a {
+.project:hover {
   text-decoration: none;
   color: inherit;
 }
 
-.project a:hover {
-  text-decoration: none;
-  color: inherit;
+.project h2 {
+	color: black;
 }
 
 .project:first-of-type {
 	background-image: url(../img/nordic-network.PNG);
+}
+
+.project:first-of-type h2 {
 	font-family: Viking;
+	color: white;
 }
