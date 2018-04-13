@@ -19,23 +19,22 @@ function switchSlide2() {
     });
 }
 
-var shown = false;
+var shown = [false, false];
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
-	if(!shown) {
-		if(scroll > $(window).height() * 0.75) {
-			$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
-				$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
-					$("#projects h2:eq(2)").animate({width:'toggle'}, 'fast', function() {
-						$("#projects h2:eq(3)").animate({width:'toggle'}, 'fast');
-					});
+	if(!shown[0] && scroll > $(window).height() * 0.75) {
+		$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
+			$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
+				$("#projects h2:eq(2)").animate({width:'toggle'}, 'fast', function() {
+					$("#projects h2:eq(3)").animate({width:'toggle'}, 'fast');
 				});
 			});
-			
-			shown = true;
-		} else if(scroll > $(window).height() * 0.55) {
-			$("#projects h1").animate({width:'toggle'}, 'fast');
-		}
+		});
+
+		shown[0] = true;
+	} else if(!shown[1] && scroll > $(window).height() * 0.55) {
+		$("#projects h1").animate({width:'toggle'}, 'fast');
+		shown[1] = true;
 	}
 });
