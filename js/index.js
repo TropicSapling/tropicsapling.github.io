@@ -1,6 +1,12 @@
 $(function() {
     setTimeout(switchSlide2, 5000);
 	
+	$('#tropicsapling').css('visibility', 'visible');
+	$('#tropicsapling').fadeOut(0);
+	setTimeout(function() {
+		$('#tropicsapling').fadeIn(2000);
+	}, 2000);
+	
 	$("#projects h1").animate({width:'toggle'}, 0);
 	$(".project").animate({width:'toggle'}, 0);
 });
