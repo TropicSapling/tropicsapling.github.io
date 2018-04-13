@@ -90,17 +90,20 @@
 }
 
 .project div {
-	background: linear-gradient(45deg,#000000 0%,#2d2d2d 100%);
+	background: linear-gradient(45deg, #000000 0%, #2d2d2d 100%);
+	width: 30rem;
 	height: 100%;
 	padding-left: 5%;
 	padding-right: 5%;
 	opacity: 0.8;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
 .project h2 {
-	color: black;
+	color: white;
+	text-align: center;
 }
 
 .project:first-of-type {
@@ -109,5 +112,4 @@
 
 .project:first-of-type h2 {
 	font-family: Viking;
-	color: white;
 }
