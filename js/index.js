@@ -15,3 +15,19 @@ function switchSlide2() {
         setTimeout(switchSlide, 5000)
     });
 }
+
+var shown = [false, false, false, false, false];
+
+$(window).scroll(function(e) {
+    var scroll = $(window).scrollTop();
+    
+	if(!shown[0] && scroll > 56) {
+		$("#projects h1").animate({width:'toggle'}, 0);
+		$("#projects h1").animate({width:'toggle'}, 350);
+		shown[0] = true;
+    } else if(!shown[1] && scroll > 136) {
+		$("#projects h2:eq(0)").animate({width:'toggle'}, 0);
+		$("#projects h2:eq(0)").animate({width:'toggle'}, 350);
+		shown[1] = true;
+    }
+});
