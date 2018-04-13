@@ -8,6 +8,16 @@
   width: 100%;
 }
 
+#tropicsapling {
+  display: grid;
+}
+
+#tropicsapling em {
+  font-size: 1.5rem;
+  color: #eee;
+  justify-self: center;
+}
+
 .wrapper {
   display: grid;
   position: absolute;
