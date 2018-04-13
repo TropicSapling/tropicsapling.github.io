@@ -1,5 +1,8 @@
 $(function() {
     setTimeout(switchSlide2, 5000);
+	
+	$("#projects h1").animate({width:'toggle'}, 0);
+	$(".project").animate({width:'toggle'}, 0);
 });
 
 function switchSlide() {
@@ -22,8 +25,6 @@ $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
 	if(!shown) {
 		if(scroll > 300) {
-			$("#projects h1").animate({width:'toggle'}, 0);
-			$(".project").animate({width:'toggle'}, 0);
 			$("#projects h1").animate({width:'toggle'}, 'fast', function() {
 				$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
 					$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
