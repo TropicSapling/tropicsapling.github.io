@@ -5,6 +5,7 @@
 }
 
 .main-bg {
+  position: absolute;
   width: 100%;
 }
 
