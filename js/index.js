@@ -3,5 +3,5 @@ $(function() {
 });
 
 function switchSlide() {
-    $('#img-wrapper img:first').fadeOut(1000).next().show().end().appendTo('#img-wrapper');
+    $('#img-wrapper img:first').fadeOut(1000).next().fadeIn(100).end().appendTo('#img-wrapper');
 }
