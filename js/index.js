@@ -7,5 +7,5 @@ function switchSlide() {
 }
 
 function switchSlide2() {
-    $('#img-wrapper img:second').fadeOut(1000).prev().fadeIn(1000, setTimeout(switchSlide, 2000));
+    $('#img-wrapper img:first').next().fadeOut(1000).prev().fadeIn(1000, setTimeout(switchSlide, 2000));
 }
