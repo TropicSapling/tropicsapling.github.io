@@ -24,10 +24,10 @@ var shown = [false, false];
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
 	if(!shown[0] && scroll > $(window).height() * 0.75) {
-		$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
-			$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
-				$("#projects h2:eq(2)").animate({width:'toggle'}, 'fast', function() {
-					$("#projects h2:eq(3)").animate({width:'toggle'}, 'fast');
+		$(".project:eq(0)").animate({width:'toggle'}, 'fast', function() {
+			$(".project:eq(1)").animate({width:'toggle'}, 'fast', function() {
+				$(".project:eq(2)").animate({width:'toggle'}, 'fast', function() {
+					$(".project:eq(3)").animate({width:'toggle'}, 'fast');
 				});
 			});
 		});

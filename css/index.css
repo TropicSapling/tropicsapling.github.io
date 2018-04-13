@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Viking;
+    src: url(../fonts/Viking.ttf);
+}
+
 /* NOTE: Custom scrollbar doesn't work on IE nor Firefox */
 ::-webkit-scrollbar {
     width: 10px;
@@ -53,6 +58,8 @@
 
 #projects.wrapper {
     top: 100%;
+	padding-left: 10rem;
+	padding-right: 10rem;
 }
 
 #user-title {
@@ -86,4 +93,5 @@
 
 .project:first-of-type {
 	background-image: url(../img/nordic-network.PNG);
+	font-family: Viking;
 }
