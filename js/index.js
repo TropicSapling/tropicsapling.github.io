@@ -33,7 +33,7 @@ $(window).scroll(function(e) {
 		});
 
 		shown[0] = true;
-	} else if(!shown[1] && scroll > $(window).height() * 0.55) {
+	} else if(!shown[1] && scroll > $(window).height() * 0.5) {
 		$("#projects h1").animate({width:'toggle'}, 'fast');
 		shown[1] = true;
 	}
