@@ -16,18 +16,28 @@ function switchSlide2() {
     });
 }
 
-var shown = [false, false, false, false, false];
+var shown = false;
 
 $(window).scroll(function(e) {
-    var scroll = $(window).scrollTop();
-    
-	if(!shown[0] && scroll > 56) {
-		$("#projects h1").animate({width:'toggle'}, 0);
-		$("#projects h1").animate({width:'toggle'}, 350);
-		shown[0] = true;
-    } else if(!shown[1] && scroll > 136) {
-		$("#projects h2:eq(0)").animate({width:'toggle'}, 0);
-		$("#projects h2:eq(0)").animate({width:'toggle'}, 350);
-		shown[1] = true;
-    }
+	var scroll = $(window).scrollTop();
+	if(!shown) {
+		if(scroll > 56) {
+			$("#projects h1").animate({width:'toggle'}, 0);
+		} else if(scroll > 136) {
+			$("#projects h2:eq(0)").animate({width:'toggle'}, 0);
+		} else if(scroll > 300) {
+			$(".project").animate({width:'toggle'}, 0);
+			$("#projects h1").animate({width:'toggle'}, 'fast', function() {
+				$("#projects h2:eq(0)").animate({width:'toggle'}, 'fast', function() {
+					$("#projects h2:eq(1)").animate({width:'toggle'}, 'fast', function() {
+						$("#projects h2:eq(2)").animate({width:'toggle'}, 'fast', function() {
+							$("#projects h2:eq(3)").animate({width:'toggle'}, 'fast');
+						});
+					});
+				});
+			});
+			
+			shown = true;
+		}
+	}
 });
