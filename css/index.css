@@ -83,3 +83,7 @@
   text-decoration: none;
   color: inherit;
 }
+
+.project:first {
+	background-image: url(img/nordic-network.PNG);
+}
