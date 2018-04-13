@@ -78,7 +78,7 @@
 
 .project {
 	display: grid;
-	justify-content: center;
+	justify-content: right;
 	align-items: center;
 	text-decoration: none;
 	background-size: cover;
@@ -87,6 +87,16 @@
 .project:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.project div {
+	background: linear-gradient(45deg,#000000 0%,#2d2d2d 100%);
+	height: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
 }
 
 .project h2 {
