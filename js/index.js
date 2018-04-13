@@ -32,10 +32,10 @@ $(window).scroll(function(e) {
 					});
 				});
 			});
-		} else if(scroll > $(window).height() * 0.6) {
-			$("#projects h1").animate({width:'toggle'}, 'fast');
 			
 			shown = true;
+		} else if(scroll > $(window).height() * 0.55) {
+			$("#projects h1").animate({width:'toggle'}, 'fast');
 		}
 	}
 });
