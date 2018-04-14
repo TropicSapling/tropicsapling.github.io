@@ -4,8 +4,8 @@ $(function() {
 	$('#tropicsapling').css('visibility', 'visible');
 	$('#tropicsapling').fadeOut(0);
 	setTimeout(function() {
-		$('#tropicsapling').fadeIn(1500);
-	}, 1500);
+		$('#tropicsapling').fadeIn(2000);
+	}, 1000);
 	
 	$("#projects h1").animate({width:'toggle'}, 0);
 	$(".project").animate({width:'toggle'}, 0);
@@ -14,14 +14,14 @@ $(function() {
 function switchSlide() {
     $('#img-wrapper img:first').fadeOut(1000)
     $('#img-wrapper img:first').next().fadeIn(1000, function() {
-        setTimeout(switchSlide2, 5000)
+        setTimeout(switchSlide2, 7500)
     });
 }
 
 function switchSlide2() {
     $('#img-wrapper img:first').next().fadeOut(1000)
     $('#img-wrapper img:first').fadeIn(1000, function() {
-        setTimeout(switchSlide, 5000)
+        setTimeout(switchSlide, 7500)
     });
 }
 
