@@ -116,3 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 .project:first-of-type h2 {
 	font-family: Viking;
 }
+
+.project:nth-of-type(2) {
+	background-image: url(../img/jumping-ai.PNG);
+}
