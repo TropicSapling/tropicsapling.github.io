@@ -123,3 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 .project:nth-of-type(2) {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/jumping-ai.PNG);
 }
+
+.project:nth-of-type(3) {
+	background-image: url(../img/moving-ai.PNG);
+}
