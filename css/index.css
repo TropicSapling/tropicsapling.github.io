@@ -97,8 +97,6 @@ h1, h2, h3, h4, h5, h6 {
 	width: 30rem;
 	height: 100%;
 	float: right;
-	padding-left: 5%;
-	padding-right: 5%;
 	opacity: 0.8;
 	display: flex;
 	justify-content: center;
