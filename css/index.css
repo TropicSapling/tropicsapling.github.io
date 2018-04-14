@@ -81,9 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project {
-	display: grid;
-	justify-content: right;
-	align-items: center;
+	display: block;
 	text-decoration: none;
 	background-size: cover;
 	background-position-y: center;
@@ -98,12 +96,18 @@ h1, h2, h3, h4, h5, h6 {
 	background: linear-gradient(45deg, #000000 0%, #2d2d2d 100%);
 	width: 30rem;
 	height: 100%;
+	float: right;
 	padding-left: 5%;
 	padding-right: 5%;
 	opacity: 0.8;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: width 0.7s ease;
+}
+
+.project div:hover {
+	width: 100%;
 }
 
 .project h2 {
