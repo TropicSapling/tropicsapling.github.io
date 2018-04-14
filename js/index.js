@@ -4,8 +4,8 @@ $(function() {
 	$('#tropicsapling').css('visibility', 'visible');
 	$('#tropicsapling').fadeOut(0);
 	setTimeout(function() {
-		$('#tropicsapling').fadeIn(2000);
-	}, 2000);
+		$('#tropicsapling').fadeIn(1500);
+	}, 1500);
 	
 	$("#projects h1").animate({width:'toggle'}, 0);
 	$(".project").animate({width:'toggle'}, 0);
