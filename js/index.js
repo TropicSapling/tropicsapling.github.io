@@ -1,5 +1,5 @@
 $(function() {
-	setTimeout(switchSlide2, 5000);
+	setTimeout(switchSlide2, 7500);
 	
 	$('#tropicsapling').css('visibility', 'visible');
 	$('#tropicsapling').fadeOut(0);
