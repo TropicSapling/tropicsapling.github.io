@@ -9,6 +9,8 @@ $(function() {
 	
 	$("#projects h1").animate({width:'toggle'}, 0);
 	$(".project").animate({width:'toggle'}, 0);
+	$(".project").css('visibility', 'hidden');
+	$(".project").css('display', 'block');
 });
 
 function switchSlide() {
@@ -38,8 +40,14 @@ $(window).scroll(function(e) {
 		
 		shown[2] = true;
 	} else if(!shown[1] && scroll > $(window).height() * 0.9) {
+		$(".project:eq(0)").css('visibility', 'visible');
+		
 		$(".project:eq(0)").animate({width:'toggle'}, 'fast', function() {
+			$(".project:eq(1)").css('visibility', 'visible');
+			
 			$(".project:eq(1)").animate({width:'toggle'}, 'fast', function() {
+				$(".project:eq(2)").css('visibility', 'visible');
+				
 				$(".project:eq(2)").animate({width:'toggle'}, 'fast');
 			});
 		});
