@@ -25,26 +25,28 @@ function switchSlide2() {
 	});
 }
 
-var shown = [false, false];
+var shown = [false, false, false];
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
-	if(!shown[0] && scroll > $(window).height() * 0.8) {
+	if(!shown[2] && scroll > $(window).height() * 1.3) {
+		$(".project:eq(3)").animate({width:'toggle'}, 'fast', function() {
+			$(".project:eq(4)").animate({width:'toggle'}, 'fast', function() {
+				$(".project:eq(5)").animate({width:'toggle'}, 'fast');
+			});
+		});
+		
+		shown[2] = true;
+	} else if(!shown[1] && scroll > $(window).height() * 0.9) {
 		$(".project:eq(0)").animate({width:'toggle'}, 'fast', function() {
 			$(".project:eq(1)").animate({width:'toggle'}, 'fast', function() {
-				$(".project:eq(2)").animate({width:'toggle'}, 'fast', function() {
-					$(".project:eq(3)").animate({width:'toggle'}, 'fast', function() {
-						$(".project:eq(4)").animate({width:'toggle'}, 'fast', function() {
-							$(".project:eq(5)").animate({width:'toggle'}, 'fast');
-						});
-					});
-				});
+				$(".project:eq(2)").animate({width:'toggle'}, 'fast');
 			});
 		});
 
-		shown[0] = true;
-	} else if(!shown[1] && scroll > $(window).height() * 0.5) {
-		$("#projects h1").animate({width:'toggle'}, 'fast');
 		shown[1] = true;
+	} else if(!shown[0] && scroll > $(window).height() * 0.5) {
+		$("#projects h1").animate({width:'toggle'}, 'fast');
+		shown[0] = true;
 	}
 });
