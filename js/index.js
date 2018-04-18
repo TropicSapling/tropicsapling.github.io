@@ -41,12 +41,15 @@ $(window).scroll(function(e) {
 		shown[2] = true;
 	} else if(!shown[1] && scroll > $(window).height() * 0.9) {
 		$(".project:eq(0)").css('visibility', 'visible');
+		$(".project:eq(0)").css('display', 'none');
 		
 		$(".project:eq(0)").animate({width:'toggle'}, 'fast', function() {
 			$(".project:eq(1)").css('visibility', 'visible');
+			$(".project:eq(1)").css('display', 'none');
 			
 			$(".project:eq(1)").animate({width:'toggle'}, 'fast', function() {
 				$(".project:eq(2)").css('visibility', 'visible');
+				$(".project:eq(2)").css('display', 'none');
 				
 				$(".project:eq(2)").animate({width:'toggle'}, 'fast');
 			});
