@@ -31,7 +31,7 @@ var shown = [false, false, false];
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
-	if(!shown[2] && scroll > $(window).height() * 1.3) {
+	if(!shown[2] && scroll > $(window).height() * 1.5) {
 		$(".project:eq(3)").css('visibility', 'visible');
 		$(".project:eq(3)").css('display', 'none');
 		
@@ -48,7 +48,7 @@ $(window).scroll(function(e) {
 		});
 		
 		shown[2] = true;
-	} else if(!shown[1] && scroll > $(window).height() * 0.9) {
+	} else if(!shown[1] && scroll > $(window).height()) {
 		$(".project:eq(0)").css('visibility', 'visible');
 		$(".project:eq(0)").css('display', 'none');
 		
