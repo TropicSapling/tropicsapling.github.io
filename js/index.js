@@ -33,7 +33,11 @@ $(window).scroll(function(e) {
 		$(".project:eq(0)").animate({width:'toggle'}, 'fast', function() {
 			$(".project:eq(1)").animate({width:'toggle'}, 'fast', function() {
 				$(".project:eq(2)").animate({width:'toggle'}, 'fast', function() {
-					$(".project:eq(3)").animate({width:'toggle'}, 'fast');
+					$(".project:eq(3)").animate({width:'toggle'}, 'fast', function() {
+						$(".project:eq(4)").animate({width:'toggle'}, 'fast', function() {
+							$(".project:eq(5)").animate({width:'toggle'}, 'fast');
+						});
+					});
 				});
 			});
 		});
