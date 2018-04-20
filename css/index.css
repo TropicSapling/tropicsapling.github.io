@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 	height: 200%;
 	padding: 2rem 10rem;
 	grid-gap: 2rem;
+	align-items: start;
 }
 
 #user-title {
