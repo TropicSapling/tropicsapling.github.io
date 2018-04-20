@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-bg {
 	position: absolute;
 	width: 100%;
+	min-height: 100%;
 }
 
 #tropicsapling {
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: 100%;
 	padding: 2rem 10rem;
 	grid-template-rows: min-content 1fr;
+	background: linear-gradient(#bee, #fff);
 }
 
 #about.wrapper p {
