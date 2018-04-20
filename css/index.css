@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro.wrapper {
 	top: 0;
-	align-items: left;
+	align-items: start;
 }
 
 #about.wrapper {
