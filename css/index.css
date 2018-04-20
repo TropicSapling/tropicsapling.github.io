@@ -60,8 +60,12 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: left;
 }
 
-#projects.wrapper {
+#about.wrapper {
 	top: 100%;
+}
+
+#projects.wrapper {
+	top: 200%;
 	height: 200%;
 	padding: 2rem 10rem;
 	grid-gap: 2rem;
