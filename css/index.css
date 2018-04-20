@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 #about.wrapper {
 	top: 100%;
 	padding: 2rem 10rem;
-	justify-content: center;
+	grid-template-columns: min-content 1fr;
 }
 
 #projects.wrapper {
@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 	height: 200%;
 	padding: 2rem 10rem;
 	grid-gap: 2rem;
-	align-items: start;
 }
 
 #user-title {
