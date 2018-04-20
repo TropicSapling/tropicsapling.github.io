@@ -31,6 +31,15 @@ h1, h2, h3, h4, h5, h6 {
 	overflow: hidden;
 }
 
+#img-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(transparent, transparent, transparent, transparent, #be9);
+}
+
 .main-bg {
 	position: absolute;
 	width: 100%;
@@ -65,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 	top: 100%;
 	padding: 2rem 10rem;
 	grid-template-rows: min-content 1fr;
-	background: linear-gradient(#bee, #fff);
+	background: linear-gradient(#be9, #fff);
 }
 
 #about.wrapper p {
