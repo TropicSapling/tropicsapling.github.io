@@ -99,6 +99,10 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f0f0f0; /* TMP */
 }
 
+#knowledge-grid > div > img {
+	width: 100%;
+}
+
 #knowledge-grid > div:nth-of-type(2) {
 	background-color: darkgray; /* TMP */
 }
