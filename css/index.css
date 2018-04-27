@@ -90,6 +90,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #knowledge.wrapper {
 	top: 400%;
+	grid-template-rows: min-content 1fr;
+}
+
+#knowledge-grid {
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	background-color: #f0f0f0; /* TMP */
+}
+
+#knowledge-grid:nth-child(2) {
+	background-color: darkgray; /* TMP */
+}
+
+#knowledge-grid:nth-child(3) {
+	background-color: gray; /* TMP */
 }
 
 #user-title {
