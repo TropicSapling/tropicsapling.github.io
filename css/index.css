@@ -99,11 +99,11 @@ h1, h2, h3, h4, h5, h6 {
 	background-color: #f0f0f0; /* TMP */
 }
 
-#knowledge-grid:nth-child(2) {
+#knowledge-grid > div:nth-of-type(2) {
 	background-color: darkgray; /* TMP */
 }
 
-#knowledge-grid:nth-child(3) {
+#knowledge-grid > div:nth-of-type(3) {
 	background-color: gray; /* TMP */
 }
 
