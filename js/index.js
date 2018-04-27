@@ -31,7 +31,7 @@ var shown = [false, false, false];
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
-	if(!shown[2] && scroll > $(window).height() * 1.5) {
+	if(!shown[2] && scroll > $(window).height() * 2.5) {
 		$(".project:eq(3)").css('visibility', 'visible');
 		$(".project:eq(3)").css('display', 'none');
 		
@@ -48,7 +48,7 @@ $(window).scroll(function(e) {
 		});
 		
 		shown[2] = true;
-	} else if(!shown[1] && scroll > $(window).height()) {
+	} else if(!shown[1] && scroll > $(window).height() * 2) {
 		$(".project:eq(0)").css('visibility', 'visible');
 		$(".project:eq(0)").css('display', 'none');
 		
@@ -65,7 +65,7 @@ $(window).scroll(function(e) {
 		});
 
 		shown[1] = true;
-	} else if(!shown[0] && scroll > $(window).height() * 0.5) {
+	} else if(!shown[0] && scroll > $(window).height() * 1.5) {
 		$("#projects h1").animate({width:'toggle'}, 'fast');
 		shown[0] = true;
 	}
