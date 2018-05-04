@@ -93,6 +93,11 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-rows: min-content 1fr;
 }
 
+#contact.wrapper {
+	top: 500%;
+	grid-template-rows: min-content 1fr 1fr 1fr;
+}
+
 #knowledge-grid {
 	display: grid;
 	grid-template: 1fr 1fr / 1fr 1fr;
