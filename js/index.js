@@ -11,6 +11,13 @@ $(function() {
 	$(".project").animate({width:'toggle'}, 0);
 	$(".project").css('visibility', 'hidden');
 	$(".project").css('display', 'block');
+	
+	setTimeout(function () {
+		$("#footer").animate({top: "95%"});
+		setTimeout(function() {
+			$("#footer").animate({top: "100%"});
+		}, 8192);
+	}, Math.floor(Math.random() * 65536));
 });
 
 function switchSlide() {

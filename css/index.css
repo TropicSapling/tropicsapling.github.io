@@ -183,10 +183,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* TODO: Make random popup animation in JS */
+/* Also this is not really a footer currently xD */
 #footer {
-    background-color: rgba(0, 0, 0, 0.97);
+    background-color: black;
     font-family: Segoe UI;
-    top: 95%;
+    top: 100%;
     height: 5%;
     color: white;
     width: 100%;
