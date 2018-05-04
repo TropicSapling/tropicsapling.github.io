@@ -181,3 +181,20 @@ h1, h2, h3, h4, h5, h6 {
 .project:nth-of-type(3) {
 	background-image: url(../img/moving-ai.PNG);
 }
+
+/* TODO: Make random popup animation in JS */
+#footer {
+    background-color: rgba(0, 0, 0, 0.97);
+    font-family: Segoe UI;
+    top: 95%;
+    height: 5%;
+    color: white;
+    width: 100%;
+	position: fixed;
+	display: grid;
+	padding-left: 0.5rem;
+}
+
+#footer p {
+	align-self: center;
+}
