@@ -182,6 +182,10 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/moving-ai.PNG);
 }
 
+.project:nth-of-type(4), .project:nth-of-type(5), .project:nth-of-type(6) {
+	background: linear-gradient(45deg, #ddd 0%, #bbb 100%);
+}
+
 /* TODO: Make random popup animation in JS */
 /* Also this is not really a footer currently xD */
 #footer {
