@@ -203,3 +203,37 @@ h1, h2, h3, h4, h5, h6 {
 #footer p {
 	align-self: center;
 }
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	#user-title {
+		font-size: 3rem;
+		justify-self: center;
+	}
+	
+	#tropicsapling {
+		padding-top: 4rem;
+		padding-left: 0;
+	}
+	
+	#tropicsapling em {
+		font-size: 1rem;
+		justify-self: center;
+	}
+	
+	.wrapper {
+		padding: 0 2rem;
+	}
+	
+	#about.wrapper p {
+		font-size: 1.2rem;
+	}
+	
+	.normal-title {
+		font-size: 3rem;
+		text-align: left;
+	}
+	
+	#footer {
+		display: none;
+	}
+}
