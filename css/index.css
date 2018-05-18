@@ -74,12 +74,22 @@ h1, h2, h3, h4, h5, h6 {
 
 #about.wrapper {
 	top: 100%;
-	grid-template-rows: min-content 1fr;
+	grid-template-rows: min-content;
 	background: linear-gradient(#be9, #fff);
 }
 
 #about.wrapper p {
 	font-size: 2rem;
+}
+
+#about.wrapper img {
+	width: 2rem;
+	justify-self: center;
+	margin-top: -6rem;
+}
+
+#learn-more {
+	font-size: 3rem;
 }
 
 #projects.wrapper {
@@ -242,6 +252,10 @@ h1, h2, h3, h4, h5, h6 {
 	.normal-title {
 		font-size: 2.5rem;
 		text-align: left;
+	}
+
+	#learn-more {
+		text-align: center;
 	}
 
 	.project div {
