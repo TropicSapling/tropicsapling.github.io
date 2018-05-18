@@ -72,6 +72,25 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: flex-start;
 }
 
+#intro.wrapper img {
+	width: 3rem;
+	filter: invert(1);
+	position: absolute;
+	bottom: 10%;
+}
+
+#intro.wrapper img:hover {
+	cursor: pointer;
+}
+
+.scroller {
+	justify-self: center;
+}
+
+.scroller:hover {
+	cursor: pointer;
+}
+
 #about.wrapper {
 	top: 100%;
 	grid-template-rows: min-content;

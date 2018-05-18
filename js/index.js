@@ -28,6 +28,18 @@ $(function() {
 			$("#footer").animate({top: "100%"});
 		}, 8192);
 	}, Math.floor(Math.random() * 65536));
+
+	$("#intro.wrapper img.scroller").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#about.wrapper").offset().top
+		}, 1000);
+	});
+
+	$("#about.wrapper img.scroller").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#projects.wrapper").offset().top
+		}, 1000);
+	});
 });
 
 function switchSlide() {
