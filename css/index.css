@@ -83,8 +83,23 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: pointer;
 }
 
+#intro.wrapper .scroller {
+	visibility: hidden;
+}
+
 .scroller {
 	justify-self: center;
+	animation: jump 4s infinite;
+}
+
+@keyframes jump {
+	0%, 75%, 100% {
+		transform: translateY(0);
+	}
+	
+	82.5% {
+		transform: translateY(0.5rem);
+	}
 }
 
 .scroller:hover {
@@ -104,7 +119,11 @@ h1, h2, h3, h4, h5, h6 {
 #about.wrapper img {
 	width: 2rem;
 	justify-self: center;
-	margin-top: -6rem;
+}
+
+#about.wrapper div {
+	display: grid;
+	grid-template-rows: min-content;
 }
 
 #learn-more {
@@ -134,6 +153,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-width: thick;
 	border-style: solid;
 	border-image: linear-gradient(to top, #8b5, #be9) 1 1;
+	overflow: hidden;
 }
 
 #knowledge-grid > div > img {
@@ -273,7 +293,6 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#about.wrapper img.scroller {
-		margin-top: -6.5rem;
 		width: 1.5rem;
 	}
 	
