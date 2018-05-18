@@ -305,6 +305,10 @@ h1, h2, h3, h4, h5, h6 {
 		width: 1.5rem;
 	}
 	
+	#projects.wrapper {
+		padding-bottom: 2rem;
+	}
+	
 	.normal-title {
 		font-size: 2.5rem;
 		text-align: left;
@@ -321,6 +325,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	.project div h2 {
 		font-size: 1.2rem;
+	}
+	
+	#projects2.wrapper {
+		padding: 5.75rem 2rem;
 	}
 
 	#knowledge.wrapper {
