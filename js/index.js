@@ -32,13 +32,13 @@ $(function() {
 	$("#intro.wrapper img.scroller").click(function() {
 		$('html, body').animate({
 			scrollTop: $("#about.wrapper").offset().top
-		}, 1000);
+		}, 750);
 	});
 
 	$("#about.wrapper img.scroller").click(function() {
 		$('html, body').animate({
 			scrollTop: $("#projects.wrapper").offset().top
-		}, 1000);
+		}, 750);
 	});
 });
 
