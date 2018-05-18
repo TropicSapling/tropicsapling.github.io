@@ -1,5 +1,10 @@
 $(function() {
 	setTimeout(switchSlide2, 7500);
+
+	if($(window).width() < 668) {
+        // Mobile
+        $(".knowledge-box:eq(1)").before($("#jsimg"));
+    }
 	
 	$('#tropicsapling').css('visibility', 'visible');
 	$('#tropicsapling').fadeOut(0);
