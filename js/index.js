@@ -1,7 +1,7 @@
 $(function() {
 	$('#fullpage').fullpage({
 		scrollBar: true,
-		scrollOverflow: true
+		navigation: true
 	});
 	
 	setTimeout(switchSlide2, 7500);
