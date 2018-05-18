@@ -11,6 +11,11 @@ $(function() {
 	$(".project").animate({width:'toggle'}, 0);
 	$(".project").css('visibility', 'hidden');
 	$(".project").css('display', 'block');
+
+	$("#knowledge h1").animate({width:'toggle'}, 0);
+	$("#knowledge-grid").animate({width:'toggle'}, 0);
+	$("#knowledge-grid").css('visibility', 'hidden');
+	$("#knowledge-grid").css('display', 'block');
 	
 	setTimeout(function () {
 		$("#footer").animate({top: "95%"});
@@ -34,11 +39,20 @@ function switchSlide2() {
 	});
 }
 
-var shown = [false, false, false];
+var shown = [false, false, false, false];
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
-	if(!shown[2] && scroll > $(window).height() * 2.5) {
+	if(!shown[3] && scroll > $(window).height() * 3.75) {
+		$("#knowledge .normal-title").animate({width:'toggle'}, 'fast', function() {
+			$("#knowledge-grid").css('visibility', 'visible');
+			$("#knowledge-grid").css('display', 'none');
+
+			$("#knowledge-grid").animate({width:'toggle'}, 'fast');
+		});
+
+		shown[3] = true;
+	} else if(!shown[2] && scroll > $(window).height() * 2.5) {
 		$(".project:eq(3)").css('visibility', 'visible');
 		$(".project:eq(3)").css('display', 'none');
 		
