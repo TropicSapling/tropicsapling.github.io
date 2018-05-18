@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
 #projects2.wrapper {
 	grid-gap: 2rem;
 	padding: 5.75rem 10rem;
-	grid-template-rows: 1fr 1fr 1fr min-content;
+	grid-template-rows: 1fr 1fr 1fr;
 }
 
 #knowledge.wrapper {
