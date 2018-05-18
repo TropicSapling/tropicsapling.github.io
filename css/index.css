@@ -263,9 +263,18 @@ h1, h2, h3, h4, h5, h6 {
 	.wrapper {
 		padding: 0 2rem;
 	}
+
+	#intro.wrapper img {
+		width: 2.5rem;
+	}
 	
 	#about.wrapper p {
 		font-size: 1rem;
+	}
+
+	#about.wrapper img.scroller {
+		margin-top: -6.5rem;
+		width: 1.5rem;
 	}
 	
 	.normal-title {
@@ -275,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 
 	#learn-more {
 		text-align: center;
+		font-size: 2rem;
 	}
 
 	.project div {
