@@ -7,6 +7,7 @@
 	<title>TropicSapling</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=David+Libre|Yatra+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -17,70 +18,90 @@
 
 	<div id="img-overlay"></div>
 	
-	<section class="wrapper" id="intro">
-		<div id="tropicsapling">
-			<h1 id="user-title">TropicSapling</h1>
-			<em>"This is an example quote"</em>
+	<div id="fullpage">
+		<div class="section" data-anchor="intro-page">
+			<section class="wrapper" id="intro">
+				<div id="tropicsapling">
+					<h1 id="user-title">TropicSapling</h1>
+					<em>"This is an example quote"</em>
+				</div>
+				
+				<a href="#about-page">
+					<img class="scroller" src="img/angle-double-down.svg"> <!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
+				</a>
+			</section>
 		</div>
-
-		<!-- TODO: Animate fading in for this -->
-		<img class="scroller" src="img/angle-double-down.svg"> <!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
-	</section>
-
-	<section class="wrapper" id="about">
-		<h1 class="normal-title">Hi, I'm TropicSapling</h1>
-		<p>Swedish programmer, knows a lot of programming languages but I'm currently mostly programming in JS (& node.js) :) (writing something better here soon)</p>
 		
-		<div>
-			<h2 class="normal-title" id="learn-more">Learn more</h2>
-			<img class="scroller" src="img/angle-double-down.svg"> <!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
+		<div class="section" data-anchor="about-page">
+			<section class="wrapper" id="about">
+				<h1 class="normal-title">Hi, I'm TropicSapling</h1>
+				<p>Swedish programmer, knows a lot of programming languages but I'm currently mostly programming in JS (& node.js) :) (writing something better here soon)</p>
+				
+				<div>
+					<h2 class="normal-title" id="learn-more">Learn more</h2>
+					<a href="#projects-page">
+						<img class="scroller" src="img/angle-double-down.svg"> <!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
+					</a>
+				</div>
+			</section>
 		</div>
-	</section>
-	
-	<section class="wrapper" id="projects">
-		<h1 class="normal-title">Projects</h1>
-		<a href="https://nn-dev-team.github.io/Nordic-Network/public" class="project"><div><h2>Nordic Network</h2></div></a>
-		<a href="/ai-test" class="project"><div><h2>Evolution of jumping AIs</h2></div></a>
-		<a href="/rotating-ais" class="project"><div><h2>Evolution of moving AIs</h2></div></a>
-		<a href="/sigmoid-ai/example/page" class="project"><div><h2>Evolution of Sigmoid AIs</h2></div></a>
-		<a href="https://github.com/TropicSapling/P-plus" class="project"><div><h2>P+</h2></div></a>
-		<a href="/rust-number-guesser" class="project"><div><h2>Rust Number Guesser</h2></div></a>
-	</section>
-
-	<section class="wrapper" id="knowledge">
-		<h1 class="normal-title">What I code in</h1>
-		<div id="knowledge-grid">
-			<div id="rustimg"></div>
-			
-			<div class="knowledge-box">
-				<h2>Rust</h2>
-				<p>Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</p>
-			</div>
-
-			<div class="knowledge-box">
-				<h2>JavaScript</h2>
-				<p>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
-			</div>
-
-			<div id="jsimg"></div>
+		
+		<div class="section" data-anchor="projects-page">
+			<section class="wrapper" id="projects">
+				<h1 class="normal-title">Projects</h1>
+				<a href="https://nn-dev-team.github.io/Nordic-Network/public" class="project" id="nordic-network"><div><h2>Nordic Network</h2></div></a>
+				<a href="/ai-test" class="project" id="evo-jump-ai"><div><h2>Evolution of jumping AIs</h2></div></a>
+				<a href="/rotating-ais" class="project" id="evo-move-ai"><div><h2>Evolution of moving AIs</h2></div></a>
+			</section>
 		</div>
-	</section>
+		
+		<div class="section" data-anchor="projects2-page">
+			<section class="wrapper" id="projects2">
+				<a href="/sigmoid-ai/example/page" class="project" id="evo-sigmoid-ai"><div><h2>Evolution of Sigmoid AIs</h2></div></a>
+				<a href="https://github.com/TropicSapling/P-plus" class="project" id="p-plus"><div><h2>P+</h2></div></a>
+				<a href="/rust-number-guesser" class="project" id="rng"><div><h2>Rust Number Guesser</h2></div></a>
+			</section>
+		</div>
+		
+		<div class="section" data-anchor="knowledge-page">
+			<section class="wrapper" id="knowledge">
+				<h1 class="normal-title">What I code in</h1>
+				<div id="knowledge-grid">
+					<div id="rustimg"></div>
+					
+					<div class="knowledge-box">
+						<h2>Rust</h2>
+						<p>Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.</p>
+					</div>
 
-	<section class="wrapper" id="contact">
-		<h1 class="normal-title">Contact Me</h1>
-		<p>If you have any questions, comments or proposals, I want to hear them. Please feel free to shoot me an email or give me a shout on one of my social media profiles. :)</p>
-		<div>
-			<h2>Email</h2>
-			<p><a href="mailto:tropical.productions.scratch@gmail.com">tropical.productions.scratch@gmail.com</a></p>
+					<div class="knowledge-box">
+						<h2>JavaScript</h2>
+						<p>JavaScript, often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+					</div>
+
+					<div id="jsimg"></div>
+				</div>
+			</section>
 		</div>
-		<div>
-			<h2>"Social Media"</h2>
-			<ul>
-				<li><a href="https://www.reddit.com/user/TropicSapling">TropicSapling @ Reddit</a></li>
-				<li><a href="https://scratch.mit.edu/users/Tropic/">Tropic @ Scratch</a></li>
-			</ul>
+		
+		<div class="section" data-anchor="contact-page">
+			<section class="wrapper" id="contact">
+				<h1 class="normal-title">Contact Me</h1>
+				<p>If you have any questions, comments or proposals, I want to hear them. Please feel free to shoot me an email or give me a shout on one of my social media profiles. :)</p>
+				<div>
+					<h2>Email</h2>
+					<p><a href="mailto:tropical.productions.scratch@gmail.com">tropical.productions.scratch@gmail.com</a></p>
+				</div>
+				<div>
+					<h2>"Social Media"</h2>
+					<ul>
+						<li><a href="https://www.reddit.com/user/TropicSapling">TropicSapling @ Reddit</a></li>
+						<li><a href="https://scratch.mit.edu/users/Tropic/">Tropic @ Scratch</a></li>
+					</ul>
+				</div>
+			</section>
 		</div>
-	</section>
+	</div>
 
 	<div id="footer">
 		<p>Your PC ran into a problem and needs to restart.</p>
@@ -90,6 +111,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
 	
 	<!-- Site-specific scripts -->
 	<script src="js/index.js"></script>

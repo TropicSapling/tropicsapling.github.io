@@ -46,6 +46,11 @@ h1, h2, h3, h4, h5, h6 {
 	min-height: 100%;
 }
 
+#fullpage {
+	position: absolute !important;
+	top: 0;
+}
+
 #tropicsapling {
 	display: grid;
 	visibility: hidden;
@@ -59,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
 	display: grid;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	left: 0;
@@ -107,7 +112,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #about.wrapper {
-	top: 100%;
 	grid-template-rows: min-content;
 	background: linear-gradient(#be9, #fff);
 }
@@ -118,7 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #about.wrapper img {
 	width: 2rem;
-	justify-self: center;
 }
 
 #about.wrapper div {
@@ -126,24 +129,30 @@ h1, h2, h3, h4, h5, h6 {
 	grid-template-rows: min-content;
 }
 
+#about.wrapper div a {
+	justify-self: center;
+}
+
 #learn-more {
 	font-size: 3rem;
 }
 
 #projects.wrapper {
-	top: 200%;
-	height: 200%;
 	grid-gap: 2rem;
 	grid-template-rows: min-content;
 }
 
+#projects2.wrapper {
+	grid-gap: 2rem;
+	padding: 5.75rem 10rem;
+	grid-template-rows: 1fr 1fr 1fr min-content;
+}
+
 #knowledge.wrapper {
-	top: 400%;
 	grid-template-rows: min-content 1fr;
 }
 
 #contact.wrapper {
-	top: 500%;
 	grid-template-rows: min-content 1fr 1fr 1fr;
 }
 
@@ -216,23 +225,23 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 }
 
-.project:first-of-type {
+#nordic-network {
 	background-image: url(../img/nordic-network.jpg);
 }
 
-.project:first-of-type h2 {
+#nordic-network h2 {
 	font-family: Viking;
 }
 
-.project:nth-of-type(2) {
+#evo-jump-ai {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/jumping-ai.PNG);
 }
 
-.project:nth-of-type(3) {
+#evo-move-ai {
 	background-image: url(../img/moving-ai.PNG);
 }
 
-.project:nth-of-type(4), .project:nth-of-type(5), .project:nth-of-type(6) {
+#evo-sigmoid-ai, #p-plus, #rng {
 	background: linear-gradient(45deg, #ddd 0%, #bbb 100%);
 }
 
@@ -315,7 +324,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#knowledge.wrapper {
-		height: 200%;
+		
 	}
 
 	#knowledge-grid {
@@ -332,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 
 	#contact.wrapper {
-		top: 600%;
+		
 	}
 	
 	#footer {
