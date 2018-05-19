@@ -144,7 +144,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #contact.wrapper {
-	grid-template-rows: min-content 1fr 1fr 1fr;
+	grid-template-rows: min-content 1fr min-content 1fr;
+	grid-gap: 2rem;
+}
+
+#contact.wrapper > p {
+	font-size: 1.5rem;
 }
 
 #knowledge-grid {
@@ -336,6 +341,10 @@ h1, h2, h3, h4, h5, h6 {
 
 	.knowledge-box h2 {
 		font-size: 2rem;
+	}
+	
+	#contact.wrapper > p {
+		font-size: 1rem;
 	}
 	
 	#footer {
