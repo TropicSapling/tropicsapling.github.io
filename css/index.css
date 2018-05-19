@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #user-title {
 	color: white;
-	font-size: 96px;
+	font-size: 6rem;
 	font-family: 'Yatra One', cursive;
 }
 
@@ -223,11 +223,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #p-plus {
-	background-image: url(../img/p-plus.PNG);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/p-plus.PNG);
 }
 
 #rng {
-	background-image: url(../img/rng.PNG);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/rng.PNG);
 }
 
 /* KNOWLEDGE SECTION */
@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .knowledge-box {
 	padding: 3rem;
-	background: linear-gradient(-45deg, #693, #be9); /* TMP */
+	background: linear-gradient(-45deg, #693, #be9);
 }
 
 .knowledge-box h2 {
