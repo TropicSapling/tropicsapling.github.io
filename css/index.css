@@ -326,10 +326,6 @@ h1, h2, h3, h4, h5, h6 {
 		padding: 5.75rem 2rem;
 	}
 
-	#knowledge.wrapper {
-		
-	}
-
 	#knowledge-grid {
 		grid-template: none;
 	}
@@ -341,12 +337,18 @@ h1, h2, h3, h4, h5, h6 {
 	.knowledge-box h2 {
 		font-size: 2rem;
 	}
-
-	#contact.wrapper {
-		
-	}
 	
 	#footer {
 		display: none;
+	}
+}
+
+@media screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: landscape) {
+	#projects.wrapper {
+		grid-gap: 1rem;
+	}
+	
+	#projects2.wrapper {
+		grid-gap: 1rem;
 	}
 }
