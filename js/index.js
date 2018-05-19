@@ -31,8 +31,13 @@ $(function() {
 	if($(window).width() < 668) {
         // Mobile
         $("#knowledge-grid").animate({margin: '40%'}, 0);
+		$(".knowledge-box").remove();
+		$("#rustimg").css('border-image', 'linear-gradient(to top, #8b5, #be9) 1 1');
+		$("#rustimg").css('border-bottom-width', 'thick');
+		$("#rustimg").css('border-bottom-style', 'solid');
     } else {
-		$("#knowledge-grid").animate({margin: '20%'}, 0);
+		$("#knowledge-grid").animate({margin: '10%'}, 0);
+		$(".knowledge-box").animate({'padding': 0}, 0);
 	}
 	$("#knowledge-grid").css('visibility', 'hidden');
 	
@@ -46,18 +51,6 @@ $(function() {
 			$("#footer").animate({top: "100%"});
 		}, 8192);
 	}, Math.floor(Math.random() * 65536));
-
-/*	$("#intro.wrapper img.scroller").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#about.wrapper").offset().top
-		}, 750);
-	});
-
-	$("#about.wrapper img.scroller").click(function() {
-		$('html, body').animate({
-			scrollTop: $("#projects.wrapper").offset().top
-		}, 750);
-	}); */
 });
 
 function switchSlide() {
@@ -75,9 +68,6 @@ function switchSlide2() {
 }
 
 var shown = [false, false, false, false, false];
-var scroll_pos = 0;
-var section = 0;
-var scrolling = false;
 
 $(window).scroll(function(e) {
 	var scroll = $(window).scrollTop();
@@ -96,7 +86,8 @@ $(window).scroll(function(e) {
 		$("#knowledge .normal-title").animate({width:'toggle'}, 'fast', function() {
 			setTimeout(function() {
 				$("#knowledge-grid").css('visibility', 'visible');
-				$("#knowledge-grid").animate({margin: 0}, 'medium');
+				$("#knowledge-grid").animate({margin: 0}, 'fast');
+				$(".knowledge-box").animate({'padding': '3rem'}, 'fast');
 			}, 500);
 		});
 
@@ -139,25 +130,4 @@ $(window).scroll(function(e) {
 		$("#projects h1").animate({width:'toggle'}, 'fast');
 		shown[0] = true;
 	}
-	
-/*	if(!scrolling) {
-		var sections = ["#intro.wrapper", "#about.wrapper", "#projects.wrapper", ".project:eq(3)", "#knowledge.wrapper", "#contact.wrapper"];
-		
-		if(scroll - scroll_pos > 0 && section < sections.length - 1) {
-			section += 1;
-		} else if(section > 0) {
-			section -= 1;
-		}
-		
-		scroll_pos = $(sections[section]).offset().top;
-		scrolling = true;
-		
-		$('html, body').animate({
-			scrollTop: $(sections[section]).offset().top
-		}, 750, function() {
-			setTimeout(function() {
-				scrolling = false;
-			}, 40);
-		});
-	} */
 });
