@@ -46,6 +46,8 @@ $(function() {
 	$("#contact.wrapper div").fadeOut(0);
 	
 	setTimeout(function () {
+		new Audio('sounds/win_err.wav').play();
+		
 		$("#footer").animate({top: "95%"});
 		setTimeout(function() {
 			$("#footer").animate({top: "100%"});
