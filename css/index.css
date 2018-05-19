@@ -231,8 +231,16 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/moving-ai.PNG);
 }
 
-#evo-sigmoid-ai, #p-plus, #rng {
-	background: linear-gradient(45deg, #ddd 0%, #bbb 100%);
+#evo-sigmoid-ai {
+	background-image: url(../img/sigmoid-ai.PNG);
+}
+
+#p-plus {
+	background-image: url(../img/p-plus.PNG);
+}
+
+#rng {
+	background-image: url(../img/rng.PNG);
 }
 
 #rustimg {

@@ -74,11 +74,11 @@ $(window).scroll(function(e) {
 	if(!shown[4] && scroll > $(window).height() * 4.75) {
 		$("#contact.wrapper h1").animate({width:'toggle'}, 'fast', function() {
 			setTimeout(function() {
-				$("#contact.wrapper > p").fadeIn(1000);
+				$("#contact.wrapper > p").fadeIn(500);
 				setTimeout(function() {
-					$("#contact.wrapper div").fadeIn(1000);
-				}, 1500);
-			}, 500);
+					$("#contact.wrapper div").fadeIn(500);
+				}, 1000);
+			}, 250);
 		});
 		
 		shown[4] = true;
@@ -88,7 +88,7 @@ $(window).scroll(function(e) {
 				$("#knowledge-grid").css('visibility', 'visible');
 				$("#knowledge-grid").animate({margin: 0}, 'fast');
 				$(".knowledge-box").animate({'padding': '3rem'}, 'fast');
-			}, 500);
+			}, 250);
 		});
 
 		shown[3] = true;
