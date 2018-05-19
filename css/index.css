@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.5rem;
 }
 
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) {
+@media screen and (min-device-width : 360px) and (max-device-width : 667px) {
 	/* UNIVERSAL */
 	
 	.wrapper {
@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: landscape) {
+@media screen and (min-device-width : 360px) and (max-device-width : 667px) and (orientation: landscape) {
 	#projects.wrapper {
 		grid-gap: 1rem;
 	}
