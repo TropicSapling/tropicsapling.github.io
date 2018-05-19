@@ -76,15 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: flex-start;
 }
 
-#intro.wrapper img {
+#intro.wrapper a {
 	width: 3rem;
 	filter: invert(1);
 	position: absolute;
 	bottom: 10%;
-}
-
-#intro.wrapper img:hover {
-	cursor: pointer;
 }
 
 #intro.wrapper .scroller {
@@ -104,10 +100,6 @@ h1, h2, h3, h4, h5, h6 {
 	82.5% {
 		transform: translateY(0.5rem);
 	}
-}
-
-.scroller:hover {
-	cursor: pointer;
 }
 
 #about.wrapper {
