@@ -271,12 +271,36 @@ h1, h2, h3, h4, h5, h6 {
 /* CONTACT SECTION */
 
 #contact.wrapper {
-	grid-template-rows: min-content 1fr min-content 1fr;
+	grid-template-areas: "h1 h1"
+						 "txt txt"
+						 ". pic"
+						 "mail pic"
+						 "media pic";
 	grid-gap: 2rem;
+}
+
+#contact.wrapper > h1 {
+	grid-area: h1;
 }
 
 #contact.wrapper > p {
 	font-size: 1.5rem;
+	grid-area: txt;
+}
+
+#contact.wrapper > img {
+	grid-area: pic;
+	justify-self: center;
+	align-self: flex-end;
+	width: 50%;
+}
+
+#email {
+	grid-area: mail;
+}
+
+#social {
+	grid-area: media;
 }
 
 @media screen and (min-device-width : 360px) and (max-device-width : 667px) {

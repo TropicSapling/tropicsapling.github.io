@@ -62,7 +62,8 @@ $(function() {
 	
 	$("#contact.wrapper h1").animate({width:'toggle'}, 0);
 	$("#contact.wrapper > p").fadeOut(0);
-	$("#contact.wrapper div").fadeOut(0);
+	$("#contact.wrapper div").fadeTo(0, 0);
+	$("#contact.wrapper > img").fadeTo(0, 0);
 });
 
 function switchSlide() {
@@ -89,7 +90,8 @@ $(window).scroll(function(e) {
 			setTimeout(function() {
 				$("#contact.wrapper > p").fadeIn(500);
 				setTimeout(function() {
-					$("#contact.wrapper div").fadeIn(500);
+					$("#contact.wrapper div").fadeTo(500, 1);
+					$("#contact.wrapper > img").fadeTo(500, 1);
 				}, 1000);
 			}, 250);
 		});
