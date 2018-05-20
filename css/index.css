@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 	grid-area: pic;
 	justify-self: center;
 	align-self: flex-end;
-	width: 50%;
+	width: 75%;
 }
 
 #email {
