@@ -222,8 +222,8 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(../img/sigmoid-ai.PNG);
 }
 
-#p-plus {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/p-plus.PNG);
+#triforce {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(../img/triforce.PNG);
 }
 
 #rng {
