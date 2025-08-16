@@ -1,1 +1,22 @@
 @import 'tailwindcss';
+
+::-webkit-scrollbar             { width: 10px         }
+::-webkit-scrollbar-track       { background: #f1f1f1 }
+::-webkit-scrollbar-thumb       { background: #aaa    }
+::-webkit-scrollbar-thumb:hover { background: #777    }
+
+h1, h2, h3, h4, h5, h6, p {
+    /* fixed padding for less weirdness */
+    padding-block-end: 0.5rem;
+    padding-block-start: 0.5rem;
+}
+
+@keyframes jump {
+	0%, 75%, 100% {
+		transform: translateY(0);
+	}
+	
+	82.5% {
+		transform: translateY(0.5rem);
+	}
+}
