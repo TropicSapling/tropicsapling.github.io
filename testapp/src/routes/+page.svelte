@@ -1,10 +1,32 @@
 <svelte:head>
-	<title>test</title>
+	<title>TropicSapling</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=David+Libre|Yatra+One">
 </svelte:head>
 
+<svelte:window on:wheel|preventDefault={handleScroll} />
+<!-- <svelte:window onwheel|nonpassive={handleScroll} /> -->
+
 <script lang="ts">
-	let test: number = 123;
+	let scroll  = 0;
+	let block   = false;
+	let blocker = setTimeout(() => block = false, 0);
+
+	// Always scroll the entire screen height
+	let handleScroll = e => {
+		// e.preventDefault();
+
+		if(!block) {
+			block = true;
+			clearTimeout(blocker);
+
+			scroll += e.deltaY < 0 ? -screen.height : screen.height;
+			scroll  = Math.round(scroll/screen.height) * screen.height;
+
+			scrollTo({top: scroll, behavior: "smooth"})
+		}
+
+		blocker = setTimeout(() => block = false, 500)
+	}
 </script>
 
 <!-- SECTION 1 - LANDING -->
@@ -19,8 +41,8 @@
 		</p>
 
 		<a href="" class="grid absolute left-0 w-full bottom-[10%] invert-100 animate-[jump_4s_infinite]">
-			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-[3em] portrait:w-[6em]">
 			<!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
+			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-[3em] portrait:w-[6em]">
 		</a>
 	</div>
 </div>
@@ -29,4 +51,11 @@
 <div class="relative h-screen bg-[linear-gradient(#be9,_#fff)] px-[10rem] py-[4rem]">
 	<h1 class="text-center text-[5em] font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
 	<p class="text-[2rem]">I'm a Swedish programmer who knows a lot of programming languages, but I'm currently mostly programming in Rust and JS. Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune. Minim postulant sea in. Cu quo impedit reformidans.</p>
+
+	<div>
+		<h2 class="text-center text-[5em] font-['Yatra_One',_cursive]" id="learn-more">Learn more</h2>
+		<a href="#projects" class="grid absolute left-0 w-full bottom-[10%] invert-100 animate-[jump_4s_infinite]">
+			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-[3em] portrait:w-[6em]">
+		</a>
+	</div>
 </div>
