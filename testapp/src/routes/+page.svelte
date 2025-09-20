@@ -3,29 +3,17 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=David+Libre|Yatra+One">
 </svelte:head>
 
-<svelte:window on:wheel|preventDefault={handleScroll} />
-<!-- <svelte:window onwheel|nonpassive={handleScroll} /> -->
+<svelte:window on:wheel|nonpassive|preventDefault={handleScroll} />
 
 <script lang="ts">
-	let scroll  = 0;
-	let block   = false;
-	let blocker = setTimeout(() => block = false, 0);
+	let scroll = 0;
 
 	// Always scroll the entire screen height
 	let handleScroll = e => {
-		// e.preventDefault();
+		scroll += e.deltaY < 0 ? -screen.height : screen.height;
+		scroll  = Math.round(scroll/screen.height) * screen.height;
 
-		if(!block) {
-			block = true;
-			clearTimeout(blocker);
-
-			scroll += e.deltaY < 0 ? -screen.height : screen.height;
-			scroll  = Math.round(scroll/screen.height) * screen.height;
-
-			scrollTo({top: scroll, behavior: "smooth"})
-		}
-
-		blocker = setTimeout(() => block = false, 500)
+		scrollTo({top: scroll, behavior: "smooth"})
 	}
 </script>
 
