@@ -43,21 +43,21 @@
 </section>
 
 <!-- SECTION 2 - INTRO -->
-<section class="grid gap-20 relative h-screen bg-[linear-gradient(#be9,_#fff)] px-[10rem] py-[4rem]" id="intro">
+<section class="grid gap-20 relative h-screen bg-[linear-gradient(#be9,_#fff)] px-[10rem] py-[4rem] portrait:px-[2rem] portrait:py-[2rem]" id="intro">
 	<div>
-		<h1 class="text-center text-[5em] font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
-		<p class="text-[2rem]">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune. Minim postulant sea in.</p>
+		<h1 class="text-center text-[5em] font-['Yatra_One',_cursive] portrait:text-[2.5em]">Hi, I'm TropicSapling</h1>
+		<p class="text-[2rem] portrait:text-[1rem] portrait:text-center">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune. Minim postulant sea in.</p>
 	</div>
 
 	<div>
-		<h2 class="text-center text-[3em] font-['Yatra_One',_cursive]">Learn more</h2>
+		<h2 class="text-center text-[3em] font-['Yatra_One',_cursive] portrait:text-[2em]">Learn more</h2>
 		<a href="#projects" class="grid left-0 w-full animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
-			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-[2em] portrait:w-[4em]">
+			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-[2em] portrait:w-[1.5em]">
 		</a>
 	</div>
 </section>
 
 <!-- SECTION 3 - PROJECTS -->
 <section class="relative h-screen" id="projects">
-	<h1 class="text-center text-[5em] font-['Yatra_One',_cursive]">Projects</h1>
+	<h1 class="text-center text-[5em] font-['Yatra_One',_cursive] portrait:text-[2.5em]">Projects</h1>
 </section>
