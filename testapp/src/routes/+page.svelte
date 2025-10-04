@@ -8,10 +8,10 @@
 <script lang="ts">
 	let scroll = 0;
 
-	// Always scroll the entire screen height
+	// Always scroll the entire window height
 	function handleScroll(e) {
-		scroll += e.deltaY < 0 ? -screen.height : screen.height;
-		scroll  = Math.round(scroll/screen.height) * screen.height;
+		scroll += e.deltaY < 0 ? -window.innerHeight : window.innerHeight;
+		scroll  = Math.round(scroll/window.innerHeight) * window.innerHeight;
 
 		scrollTo({top: scroll, behavior: "smooth"})
 	}
