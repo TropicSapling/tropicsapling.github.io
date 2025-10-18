@@ -6,7 +6,23 @@
 <svelte:window on:wheel|nonpassive|preventDefault={handleScroll} />
 
 <script lang="ts">
-	const projects = ['Project A', 'Project B', 'Project C'];
+	const projects = [
+		{
+			name: 'AI Evolution Simulation',
+			link: '/neural-network-evolution',
+			imag: 'nordic-network.jpg'
+		},
+		{
+			name: 'Linux DE sketch',
+			link: 'https://github.com/TropicSapling/de-sketch',
+			imag: 'nordic-network.jpg'
+		},
+		{
+			name: 'Project C',
+			link: '#projects',
+			imag: 'nordic-network.jpg'
+		}
+	];
 
 	let scroll = 0;
 
@@ -62,11 +78,16 @@
 <!-- SECTION 3 - PROJECTS -->
 <section class="grid grid-rows-[min-content] gap-8 relative h-screen p-8 landscape:px-40 landscape:py-16" id="projects">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Projects</h1>
-	{#each projects as project}
-		<a href="/neural-network-evolution" class="hover:*:w-full block bg-cover bg-[url(../img/nordic-network.jpg)]">
+	{#each projects as {name, link, imag}}
+		<a href="{link}" class="hover:*:w-full block bg-cover bg-[url(../img/{imag})]">
 			<div class="w-30 h-full transition-[width] duration-700 float-right flex justify-center items-center landscape:w-90 opacity-80 bg-linear-45 from-black to-neutral-800/0">
-				<h2 class="text-xl landscape:text-3xl text-white font-['David_Libre',_serif]">{project}</h2>
+				<h2 class="text-xl landscape:text-3xl text-white font-['David_Libre',_serif]">{name}</h2>
 			</div>
 		</a>
 	{/each}
+</section>
+
+<!-- SECTION 3 - SKILLS -->
+<section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="skills">
+	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
 </section>
