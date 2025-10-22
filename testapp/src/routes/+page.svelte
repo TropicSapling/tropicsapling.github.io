@@ -7,6 +7,7 @@
 
 <script lang="ts">
 	import Project from './Project.svelte'
+	import Skill   from './Skill.svelte'
 
 	const projects = [
 		{
@@ -24,6 +25,15 @@
 			link: '#projects',
 			imag: 'bg-[url(img/nordic-network.jpg)]'
 		}
+	];
+
+	const skills = [
+		{name:'Front-end / UI', desc:'JavaScript, HTML, CSS, Svelte, Tailwind, Figma', fill:92, c:'bg-emerald-400'},
+		{name:'Back-end', desc:'Rust, C/C++, Java, Go, Python, SQL, Node.js', fill:88, c:'bg-sky-400'},
+		{name:'APIs', desc:'REST / GraphQL', fill:86, c:'bg-yellow-400'},
+		{name:'Artificial Intelligence', desc:'Keras, scikit-learn', fill:85, c:'bg-rose-400'},
+		{name:'Tools', desc:'Docker, Git, Bash, GitHub, Android Studio, npm', fill:82, c:'bg-indigo-400'},
+		{name:'Databases', desc:'SQL / NoSQL', fill:80, c:'bg-teal-400'}
 	];
 
 	let scroll = 0;
@@ -85,7 +95,25 @@
 	{/each}
 </section>
 
-<!-- SECTION 3 - SKILLS -->
+<!-- SECTION 4 - SKILLS -->
 <section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="skills">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
+
+	<div class="pt-8 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+		<div class="md:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 shadow-md inset-shadow-xs">
+			<h2 class="text-2xl font-semibold">What I bring</h2>
+			<p class="text-sm text-gray-900 mt-2 leading-relaxed">Clean code, reliable systems, and delightful UX.</p>
+			<div class="mt-4 flex gap-2 flex-wrap">
+				<span class="text-xs bg-emerald-600/20 text-emerald-700 px-2 py-1 rounded-full">Curious</span>
+				<span class="text-xs bg-sky-600/20 text-sky-700 px-2 py-1 rounded-full">Goal-oriented</span>
+				<span class="text-xs bg-rose-600/20 text-rose-700 px-2 py-1 rounded-full">Creative</span>
+			</div>
+		</div>
+
+		<div class="md:col-span-2 grid gap-4 sm:grid-cols-2">
+			{#each skills as {name, desc, fill, c}}
+				<Skill {name} {desc} {fill} {c} />
+			{/each}
+		</div>
+	</div>
 </section>
