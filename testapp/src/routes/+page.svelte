@@ -28,12 +28,12 @@
 	];
 
 	const skills = [
-		{name:'Front-end / UI', desc:'JavaScript, HTML, CSS, Svelte, Tailwind, Figma', fill:92, c:'bg-emerald-400'},
-		{name:'Back-end', desc:'Rust, C/C++, Java, Go, Python, SQL, Node.js', fill:88, c:'bg-sky-400'},
-		{name:'APIs', desc:'REST / GraphQL', fill:86, c:'bg-yellow-400'},
-		{name:'Artificial Intelligence', desc:'Keras, scikit-learn', fill:85, c:'bg-rose-400'},
-		{name:'Tools', desc:'Docker, Git, Bash, GitHub, Android Studio, npm', fill:82, c:'bg-indigo-400'},
-		{name:'Databases', desc:'SQL / NoSQL', fill:80, c:'bg-teal-400'}
+		{name:'Front-end / UI', desc:'JavaScript, HTML/CSS, Svelte, Tailwind, Figma', c:'bg-emerald-400'},
+		{name:'Back-end / Systems', desc:'Rust, C/C++, Python, Go, Java, SQL, Node.js, Bash', c:'bg-sky-400'},
+		{name:'Collaboration Tools', desc:'Google Workspace, Google Colab, GitHub, Trello', fill:86, c:'bg-yellow-400'},
+		{name:'Artificial Intelligence', desc:'Pytorch, Keras, scikit-learn, GitHub Copilot', c:'bg-rose-400'},
+		{name:'Cloud / Package Management', desc:'Docker, Cargo, git, npm, pip, apt', c:'bg-indigo-400'},
+		{name:'Development Environments', desc:'Sublime Text, Visual Studio Code, Android Studio', c:'bg-teal-400'}
 	];
 
 	let scroll = 0;
@@ -111,8 +111,8 @@
 		</div>
 
 		<div class="md:col-span-2 grid gap-4 sm:grid-cols-2">
-			{#each skills as {name, desc, fill, c}}
-				<Skill {name} {desc} {fill} {c} />
+			{#each skills as {name, desc, c}}
+				<Skill {name} {desc} {c} />
 			{/each}
 		</div>
 	</div>
