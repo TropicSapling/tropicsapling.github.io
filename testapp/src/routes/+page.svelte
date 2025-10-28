@@ -75,8 +75,8 @@
 <section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="skills">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
 
-	<div class="pt-8 grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
-		<div class="md:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 shadow-md inset-shadow-xs">
+	<div class="pt-8 grid gap-6 landscape:grid-cols-3 max-w-6xl mx-auto">
+		<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 shadow-md inset-shadow-xs">
 			<h2 class="text-2xl font-semibold">What I bring</h2>
 			<p class="text-sm text-gray-900 mt-2 leading-relaxed">Clean code, reliable systems, and delightful UX.</p>
 			<div class="mt-4 flex gap-2 flex-wrap">
@@ -86,10 +86,15 @@
 			</div>
 		</div>
 
-		<div class="md:col-span-2 grid gap-4 sm:grid-cols-2">
+		<div class="landscape:col-span-2 grid gap-4 landscape:grid-cols-2">
 			{#each skills as {name, desc, tint}}
 				<Skill {name} {desc} {tint} />
 			{/each}
 		</div>
 	</div>
+</section>
+
+<!-- SECTION 5 - CONTACT -->
+<section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="contact">
+	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
 </section>
