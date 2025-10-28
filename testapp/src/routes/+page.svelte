@@ -87,8 +87,8 @@
 		</div>
 
 		<div class="md:col-span-2 grid gap-4 sm:grid-cols-2">
-			{#each skills as {name, desc, c}}
-				<Skill {name} {desc} {c} />
+			{#each skills as {name, desc, tint}}
+				<Skill {name} {desc} {tint} />
 			{/each}
 		</div>
 	</div>
