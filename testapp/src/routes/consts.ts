@@ -48,3 +48,30 @@ export const skills = [
 		tint: 'bg-teal-400'
 	}
 ];
+
+export const contacts = [
+	{
+		site:'GitHub',
+		href:'https://github.com/TropicSapling',
+		user:'@TropicSapling',
+		icon:'🐙'
+	},
+	{
+		site:'Scratch',
+		href:'https://scratch.mit.edu/users/Tropic/',
+		user:'Tropic',
+		icon:'🔗'
+	},
+	{
+		site:'Reddit',
+		href:'https://reddit.com/user/TropicSapling/',
+		user:'@TropicSapling',
+		icon:'💬'
+	},
+	{
+		site:'Mastodon',
+		href:'https://mastodon.social/',
+		user:'@placeholder',
+		icon:'🛰️'
+	}
+];

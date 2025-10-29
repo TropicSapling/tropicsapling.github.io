@@ -8,8 +8,9 @@
 <script lang="ts">
 	import Project from './Project.svelte'
 	import Skill   from './Skill.svelte'
+	import Contact from './Contact.svelte'
 
-	import {projects, skills} from './consts.ts'
+	import {projects, skills, contacts} from './consts.ts'
 
 	let scroll = 0;
 
@@ -97,4 +98,26 @@
 <!-- SECTION 5 - CONTACT -->
 <section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="contact">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
+	<div class="mt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
+		<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 text-center">
+			<h2 class="text-lg font-semibold">Get in touch</h2>
+			<p class="text-sm text-gray-900 font-medium mt-2">Open to work, collaborations, and friendly chats.</p>
+			<a href="mailto:hello@tropicsapling.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">hello@tropicsapling.com</a>
+		</div>
+
+		<div class="landscape:col-span-2 grid grid-cols-2 gap-4">
+			{#each contacts as {site, href, user, icon}}
+				<Contact {site} {href} {user} {icon} />
+			{/each}
+		</div>
+	</div>
+
+	<div class="mt-8 max-w-4xl mx-auto bg-gradient-to-r from-indigo-800 via-emerald-700 to-sky-800 border border-white/10 rounded-2xl p-6 text-center shadow-xl ring-1 ring-white/6">
+		<h3 class="text-lg font-semibold text-white">Let's build something together</h3>
+		<p class="text-sm text-white/95 mt-2">Have an idea or a project? I’ll respond quickly — usually within 24 hours.</p>
+		<div class="mt-4 flex items-center justify-center gap-3 flex-wrap">
+			<a href="mailto:hello@tropicsapling.com" class="bg-white text-indigo-900 px-4 py-2 rounded-full font-medium shadow-sm hover:shadow-md transition">Email me</a>
+			<a href="#projects" class="text-sm text-white/90">See my work →</a>
+		</div>
+	</div>
 </section>
