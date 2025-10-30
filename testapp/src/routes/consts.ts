@@ -54,19 +54,19 @@ export const contacts = [
 		site:'GitHub',
 		href:'https://github.com/TropicSapling',
 		user:'@TropicSapling',
-		icon:'🐙'
+		icon:'github-mark.svg'
 	},
 	{
 		site:'Scratch',
 		href:'https://scratch.mit.edu/users/Tropic/',
-		user:'Tropic',
-		icon:'🔗'
+		user:'@Tropic',
+		icon:'scratch.ico'
 	},
 	{
 		site:'Reddit',
 		href:'https://reddit.com/user/TropicSapling/',
 		user:'@TropicSapling',
-		icon:'💬'
+		icon:'reddit.svg'
 	},
 	{
 		site:'Mastodon',

@@ -112,12 +112,15 @@
 		</div>
 	</div>
 
-	<div class="mt-8 max-w-4xl mx-auto bg-gradient-to-r from-indigo-800 via-emerald-700 to-sky-800 border border-white/10 rounded-2xl p-6 text-center shadow-xl ring-1 ring-white/6">
-		<h3 class="text-lg font-semibold text-white">Let's build something together</h3>
-		<p class="text-sm text-white/95 mt-2">Have an idea or a project? I’ll respond quickly — usually within 24 hours.</p>
-		<div class="mt-4 flex items-center justify-center gap-3 flex-wrap">
-			<a href="mailto:hello@tropicsapling.com" class="bg-white text-indigo-900 px-4 py-2 rounded-full font-medium shadow-sm hover:shadow-md transition">Email me</a>
-			<a href="#projects" class="text-sm text-white/90">See my work →</a>
+	<div class="mt-8 max-w-4xl mx-auto relative rounded-2xl p-6 overflow-hidden shadow-md bg-[url('https://images.unsplash.com/photo-1506765515384-028b60a970df')] bg-cover bg-center">
+		<div class="absolute inset-0 bg-black/45"></div>
+		<div class="relative text-center">
+			<h3 class="text-lg font-semibold text-white">Let's build something together</h3>
+			<p class="text-sm text-white/90 mt-2">Have an idea or a project? Get in touch and I'll respond within a few days.</p>
+			<div class="mt-4 flex items-center justify-center gap-3 flex-wrap">
+				<a href="mailto:hello@tropicsapling.com" class="bg-white text-indigo-900 px-4 py-2 rounded-full font-medium shadow-sm hover:shadow-md transition">Email me</a>
+				<a href="#projects" class="text-sm text-white/90" on:click|preventDefault={handleAnchor}>See my work →</a>
+			</div>
 		</div>
 	</div>
 </section>
