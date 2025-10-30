@@ -19,6 +19,7 @@
 		scroll += e.deltaY < 0 ? -window.innerHeight : window.innerHeight;
 		scroll  = Math.round(scroll/window.innerHeight) * window.innerHeight;
 		scroll  = Math.min(scroll, document.documentElement.scrollHeight);
+		scroll  = Math.max(scroll, 0);
 
 		scrollTo({top: scroll, behavior: "smooth"})
 	}
