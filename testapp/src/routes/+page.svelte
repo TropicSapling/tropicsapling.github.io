@@ -54,7 +54,7 @@
 <section class="grid gap-20 relative h-screen bg-[linear-gradient(#be9,_#fff)] p-8 landscape:px-40 landscape:py-16" id="intro">
 	<div>
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
-		<p class="landscape:text-3xl text-center landscape:text-left">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune. Minim postulant sea in.</p>
+		<p class="landscape:text-3xl text-center landscape:text-left">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I build maintainable software across the stack ... Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune.</p>
 	</div>
 
 	<div>
@@ -124,4 +124,6 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- TODO maybe have grass image fading into background here -->
 </section>

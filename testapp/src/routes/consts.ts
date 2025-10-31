@@ -19,7 +19,7 @@ export const projects = [
 export const skills = [
 	{
 		name: 'Front-end / UI',
-		desc: 'JavaScript, HTML/CSS, Svelte, Tailwind, Figma',
+		desc: 'JavaScript/TypeScript, HTML/CSS, Svelte, Tailwind, Figma',
 		tint: 'bg-emerald-400'
 	},
 	{
@@ -29,7 +29,7 @@ export const skills = [
 	},
 	{
 		name: 'Collaboration Tools',
-		desc: 'Google Workspace, Google Colab, GitHub, Git, Trello',
+		desc: 'Google Workspace, Colab, GitHub, Git, SharePoint, Teams, Trello',
 		tint: 'bg-yellow-400'
 	},
 	{
@@ -69,9 +69,9 @@ export const contacts = [
 		icon:'reddit.svg'
 	},
 	{
-		site:'Mastodon',
-		href:'https://mastodon.social/',
-		user:'@placeholder',
-		icon:'🛰️'
+		site:'Stack Overflow',
+		href:'https://stackoverflow.com/users/5498412/tropic',
+		user:'@tropic',
+		icon:'stackoverflow.ico'
 	}
 ];
