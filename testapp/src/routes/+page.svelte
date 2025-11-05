@@ -81,7 +81,7 @@
 		<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 shadow-md inset-shadow-xs">
 			<h2 class="text-2xl font-semibold">What I bring</h2>
 			<p class="text-sm text-gray-900 mt-2 leading-relaxed">Clean code, reliable systems, and delightful UX.</p>
-			<div class="mt-4 flex gap-2 flex-wrap">
+			<div class="pt-4 flex gap-2 flex-wrap">
 				<span class="text-xs bg-emerald-600/20 text-emerald-700 px-2 py-1 rounded-full">Curious</span>
 				<span class="text-xs bg-sky-600/20 text-sky-700 px-2 py-1 rounded-full">Goal-oriented</span>
 				<span class="text-xs bg-rose-600/20 text-rose-700 px-2 py-1 rounded-full">Creative</span>
@@ -97,33 +97,33 @@
 </section>
 
 <!-- SECTION 5 - CONTACT -->
-<section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="contact">
-	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
-	<div class="mt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
-		<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 text-center">
-			<h2 class="text-lg font-semibold">Get in touch</h2>
-			<p class="text-sm text-gray-900 font-medium mt-2">Open to work, collaborations, and friendly chats.</p>
-			<a href="mailto:hello@tropicsapling.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">hello@tropicsapling.com</a>
-		</div>
+<section class="relative h-screen" id="contact">
+	<!-- background image -->
+	<img src="img/garden.jpg" class="absolute object-cover w-full h-full -z-1" alt="Garden">
 
-		<div class="landscape:col-span-2 grid grid-cols-2 gap-4">
-			{#each contacts as {site, href, user, icon}}
-				<Contact {site} {href} {user} {icon} />
-			{/each}
-		</div>
+	<!-- fade overlay -->
+	<div class="absolute w-full h-3/10 -z-1 bg-white"></div>
+	<div class="absolute top-3/10 w-full h-6/10 -z-1 grid grid-rows-3">
+		<div class="h-full bg-linear-to-b from-white to-white/83"></div>
+		<div class="h-full bg-linear-to-b from-white/83 to-white/50"></div>
+		<div class="h-full bg-linear-to-b from-white/50 to-white/0"></div>
 	</div>
 
-	<div class="mt-8 max-w-4xl mx-auto relative rounded-2xl p-6 overflow-hidden shadow-md bg-[url('https://images.unsplash.com/photo-1506765515384-028b60a970df')] bg-cover bg-center">
-		<div class="absolute inset-0 bg-black/45"></div>
-		<div class="relative text-center">
-			<h3 class="text-lg font-semibold text-white">Let's build something together</h3>
-			<p class="text-sm text-white/90 mt-2">Have an idea or a project? Get in touch and I'll respond within a few days.</p>
-			<div class="mt-4 flex items-center justify-center gap-3 flex-wrap">
-				<a href="mailto:hello@tropicsapling.com" class="bg-white text-indigo-900 px-4 py-2 rounded-full font-medium shadow-sm hover:shadow-md transition">Email me</a>
-				<a href="#projects" class="text-sm text-white/90" on:click|preventDefault={handleAnchor}>See my work →</a>
+	<!-- actual content -->
+	<div class="p-8 landscape:px-40 landscape:py-16">
+		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
+		<div class="pt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
+			<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 text-center">
+				<h2 class="text-lg font-semibold">Get in touch</h2>
+				<p class="text-sm text-gray-900 font-medium">Open to work, collaborations, and friendly chats.</p>
+				<a href="mailto:hello@tropicsapling.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">hello@tropicsapling.com</a>
+			</div>
+
+			<div class="landscape:col-span-2 grid grid-cols-2 gap-4">
+				{#each contacts as {site, href, user, icon}}
+					<Contact {site} {href} {user} {icon} />
+				{/each}
 			</div>
 		</div>
 	</div>
-
-	<!-- TODO maybe have grass image fading into background here -->
 </section>
