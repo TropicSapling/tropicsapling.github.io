@@ -37,11 +37,6 @@
 	<img src="img/299H.jpg" class="absolute object-cover w-full h-full -z-1" alt="Man holding sapling">
 	<div class="px-5 pt-8 landscape:pt-2.5">
 		<h1 class="text-4xl landscape:text-8xl font-['Yatra_One',_cursive] text-center landscape:text-left">TropicSapling</h1>
-		<p class="font-['David_Libre',_serif] text-center landscape:text-left">
-			<em><q class="font-bold landscape:text-2xl">Simplicity is the ultimate sophistication</q></em>
-			<br>
-			<span class="font-normal text-xs">- Leonardo da Vinci</span>
-		</p>
 
 		<a href="#intro" class="grid absolute left-0 w-full bottom-1/10 invert-100 animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
 			<!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
@@ -54,7 +49,7 @@
 <section class="grid gap-20 relative h-screen bg-[linear-gradient(#be9,_#fff)] p-8 landscape:px-40 landscape:py-16" id="intro">
 	<div>
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
-		<p class="landscape:text-3xl text-center landscape:text-left">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I build maintainable software across the stack ... Lorem ipsum dolor sit amet, ne aperiri discere definiebas vel. Etiam audiam cu per, liber volumus nostrum at eam. Ius ea eius omnis labore, his error diceret vocibus no, ut pro vero vide commune.</p>
+		<p class="landscape:text-3xl text-center landscape:text-left">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I have been creating apps, tools and websites since the mid-2010s across domains such as automation, security and design. This is my personal website for giving a short overview of who I am and what I do.</p>
 	</div>
 
 	<div>
