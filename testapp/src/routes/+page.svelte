@@ -35,8 +35,8 @@
 <!-- SECTION 1 - LANDING -->
 <section class="relative h-screen text-white">
 	<img src="img/299H.jpg" class="absolute object-cover w-full h-full -z-1" alt="Man holding sapling">
-	<div class="px-5 pt-8 landscape:pt-2.5">
-		<h1 class="text-4xl landscape:text-8xl font-['Yatra_One',_cursive] text-center landscape:text-left">TropicSapling</h1>
+	<div class="p-8">
+		<h1 class="text-4xl landscape:text-7xl font-['Yatra_One',_cursive] text-center">TropicSapling</h1>
 
 		<a href="#intro" class="grid absolute left-0 w-full bottom-1/10 invert-100 animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
 			<!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
@@ -46,10 +46,10 @@
 </section>
 
 <!-- SECTION 2 - INTRO -->
-<section class="grid gap-20 relative h-screen bg-[linear-gradient(#be9,_#fff)] p-8 landscape:px-40 landscape:py-16" id="intro">
+<section class="grid gap-20 relative h-screen bg-green-200 p-8 landscape:px-80 landscape:py-16" id="intro">
 	<div>
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
-		<p class="landscape:text-3xl text-center landscape:text-left">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I have been creating apps, tools and websites since the mid-2010s across domains such as automation, security and design. This is my personal website for giving a short overview of who I am and what I do.</p>
+		<p class="landscape:text-3xl text-center landscape:text-justify">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I have been building apps, tools and websites since the mid-2010s across domains such as automation, security and design. This is my personal website giving a short overview of who I am and what I do.</p>
 	</div>
 
 	<div>
