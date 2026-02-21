@@ -34,33 +34,29 @@
 
 <!-- SECTION 1 - LANDING -->
 <section class="relative h-screen text-white">
-	<img src="img/299H.jpg" class="absolute object-cover w-full h-full -z-1" alt="Man holding sapling">
-	<div class="p-8">
-		<h1 class="text-4xl landscape:text-7xl font-['Yatra_One',_cursive] text-center">TropicSapling</h1>
+	<img src="img/forest.jpg" class="absolute object-cover w-full h-full -z-1" alt="Man holding sapling">
+	<div class="p-8 pr-12 h-full portrait:backdrop-blur-xs">
+		<div class="flex flex-col">
+			<h1 class="text-4xl landscape:text-7xl font-['Yatra_One',_cursive] text-center landscape:text-right text-white drop-shadow-2xl mb-6">
+				Hi, I'm TropicSapling
+			</h1>
+			<p class="landscape:text-3xl text-center landscape:text-right text-gray-100 leading-relaxed drop-shadow-lg font-light landscape:w-2xl ml-auto">
+				I'm a Swedish programmer and engineer who loves to explore and tinker with technology.
+				<br><br>
+				I have been building apps, tools and websites since the mid-2010s across the full stack within domains such as automation, security and design.
+				<br><br>
+				This is my personal website giving a short overview of who I am, what I do and where you can find me.
+			</p>
+		</div>
 
-		<a href="#intro" class="grid absolute left-0 w-full bottom-1/10 invert-100 animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
+		<a href="#projects" class="grid absolute left-0 w-full bottom-1/10 invert-100 animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
 			<!-- Credit to FontAwesome, license: https://fontawesome.com/license -->
 			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-8 landscape:w-12">
 		</a>
 	</div>
 </section>
 
-<!-- SECTION 2 - INTRO -->
-<section class="grid gap-20 relative h-screen bg-green-200 p-8 landscape:px-80 landscape:py-16" id="intro">
-	<div>
-		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Hi, I'm TropicSapling</h1>
-		<p class="landscape:text-3xl text-center landscape:text-justify">I'm a Swedish programmer and engineer who loves to explore and tinker with technology. I have been building apps, tools and websites since the mid-2010s across domains such as automation, security and design. This is my personal website giving a short overview of who I am and what I do.</p>
-	</div>
-
-	<div>
-		<h2 class="text-center text-3xl landscape:text-5xl font-['Yatra_One',_cursive]">Learn more</h2>
-		<a href="#projects" class="grid left-0 w-full animate-[jump_4s_infinite]" on:click|preventDefault={handleAnchor}>
-			<img src="img/angle-double-down.svg" alt="scroll arrow" class="justify-self-center w-6 landscape:w-8">
-		</a>
-	</div>
-</section>
-
-<!-- SECTION 3 - PROJECTS -->
+<!-- SECTION 2 - PROJECTS -->
 <section class="grid grid-rows-[min-content] gap-8 relative h-screen p-8 landscape:px-40 landscape:py-16" id="projects">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Projects</h1>
 	{#each projects as {name, link, imag}}
@@ -68,7 +64,7 @@
 	{/each}
 </section>
 
-<!-- SECTION 4 - SKILLS -->
+<!-- SECTION 3 - SKILLS -->
 <section class="relative h-screen p-8 landscape:px-40 landscape:py-16" id="skills">
 	<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
 
@@ -91,7 +87,7 @@
 	</div>
 </section>
 
-<!-- SECTION 5 - CONTACT -->
+<!-- SECTION 4 - CONTACT -->
 <section class="relative h-screen" id="contact">
 	<!-- background image -->
 	<img src="img/garden.jpg" class="absolute object-cover w-full h-full -z-1" alt="Garden">
