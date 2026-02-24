@@ -1,4 +1,4 @@
 # tropicsapling.github.io
-Rewrite of my personal website in Svelte and Tailwind. Still incomplete.
+Rewrite of my personal website in Svelte and Tailwind.
 
-![Snapshot of the Projects section](snapshot.PNG)
+![Snapshot of the Landing section](snapshot.PNG)
