@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		name: 'AI Evolution Simulation',
-		link: 'neural-network-evolution',
+		link: 'https://tropicsapling.github.io/neural-network-evolution',
 		imag: 'bg-[url(img/moving-ai.PNG)]'
 	},
 	{
