@@ -2,17 +2,17 @@ export const projects = [
 	{
 		name: 'AI Evolution Simulation',
 		link: 'https://tropicsapling.github.io/neural-network-evolution',
-		imag: 'bg-[url(img/moving-ai.PNG)]'
+		imag: 'bg-[url(/img/moving-ai.PNG)]'
 	},
 	{
 		name: 'Linux DE sketch',
 		link: 'https://github.com/TropicSapling/de-sketch',
-		imag: 'bg-[url(img/DE-sketch.png)]'
+		imag: 'bg-[url(/img/DE-sketch.png)]'
 	},
 	{
 		name: 'Project C',
 		link: '#projects',
-		imag: 'bg-[url(img/nordic-network.jpg)]'
+		imag: 'bg-[url(/img/nordic-network.jpg)]'
 	}
 ];
 
