@@ -65,10 +65,23 @@ web_modules/
 # Yarn Integrity file
 .yarn-integrity
 
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
 # dotenv environment variable files
 .env
 .env.*
 !.env.example
+!.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
