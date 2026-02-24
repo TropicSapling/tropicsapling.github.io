@@ -67,7 +67,7 @@
 </section>
 
 <!-- SECTION 3 - SKILLS -->
-<section class="relative h-screen" id="skills">
+<section class="relative h-[200vh] landscape:h-screen" id="skills">
 	<img src="img/palm.jpg" class="absolute object-cover w-full h-full -z-1" alt="palm tree and sky">
 	<div class="p-8 landscape:px-40 landscape:py-16">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
@@ -98,13 +98,13 @@
 	<div class="p-8 landscape:px-40 landscape:py-16">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
 		<div class="pt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
-			<div class="landscape:col-span-1 bg-gradient-to-br from-white/3 to-white/2 border border-white/6 rounded-2xl p-6 text-center">
+			<div class="p-6 text-center">
 				<h2 class="text-lg font-semibold">Get in touch</h2>
 				<p class="text-sm text-gray-900 font-medium">Open to work, collaborations, and friendly chats.</p>
 				<a href="mailto:hello@tropicsapling.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">hello@tropicsapling.com</a>
 			</div>
 
-			<div class="landscape:col-span-2 grid grid-cols-2 gap-4">
+			<div class="landscape:col-span-2 grid grid-rows-2 landscape:grid-cols-2 gap-4">
 				{#each contacts as {site, href, user, icon}}
 					<Contact {site} {href} {user} {icon} />
 				{/each}
