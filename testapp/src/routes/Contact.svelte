@@ -6,6 +6,6 @@
 	<img src='img/{icon}' class="w-8" alt="icon">
 	<div>
 		<div class="font-medium">{site}</div>
-		<div class="text-xs text-gray-400">{user}</div>
+		<div class="text-xs text-gray-600">{user}</div>
 	</div>
 </a>
