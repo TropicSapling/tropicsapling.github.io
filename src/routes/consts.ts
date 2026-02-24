@@ -1,9 +1,7 @@
-import { resolve } from '$app/paths';
-
 export const projects = [
 	{
 		name: 'AI Evolution Simulation',
-		link: resolve('/neural-network-evolution'),
+		link: '/neural-network-evolution',
 		imag: 'bg-[url(img/moving-ai.PNG)]'
 	},
 	{
