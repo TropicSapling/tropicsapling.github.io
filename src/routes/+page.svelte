@@ -33,7 +33,7 @@
 </script>
 
 <!-- SECTION 1 - LANDING -->
-<section class="relative h-dvh text-white">
+<section class="relative h-svh text-white">
 	<img src="img/forest.jpg" class="absolute object-cover w-full h-full -z-1" alt="spring tree">
 	<div class="p-8 pr-12 h-full portrait:backdrop-blur-xs">
 		<div class="flex flex-col">
@@ -56,7 +56,7 @@
 	</div>
 </section>
 
-<section class="relative h-dvh text-white" id="projects">
+<section class="relative h-svh text-white" id="projects">
 	<img src="img/stars.jpg" class="absolute object-cover w-full h-full -z-1" alt="rainy nature">
 	<div class="p-8 landscape:px-40 landscape:py-16 grid grid-rows-[min-content] gap-8 h-full">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive] drop-shadow-2xl">Projects</h1>
@@ -67,7 +67,7 @@
 </section>
 
 <!-- SECTION 3 - SKILLS -->
-<section class="relative h-[200vh] landscape:h-dvh" id="skills">
+<section class="relative h-[200vh] landscape:h-svh" id="skills">
 	<img src="img/palm.jpg" class="absolute object-cover w-full h-full -z-1" alt="palm tree and sky">
 	<div class="p-8 landscape:px-40 landscape:py-16">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
@@ -93,7 +93,7 @@
 </section>
 
 <!-- SECTION 4 - CONTACT -->
-<section class="relative h-dvh" id="contact">
+<section class="relative h-svh" id="contact">
 	<img src="img/rainforest.jpg" class="absolute object-cover w-full h-full -z-1" alt="Rainforest">
 	<div class="p-8 landscape:px-40 landscape:py-16">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
