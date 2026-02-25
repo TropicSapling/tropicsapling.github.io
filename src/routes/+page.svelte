@@ -101,7 +101,7 @@
 			<div class="p-6 text-center">
 				<h2 class="text-lg font-semibold">Get in touch</h2>
 				<p class="text-sm text-gray-900 font-medium">Open to work, collaborations, and friendly chats.</p>
-				<a href="mailto:hello@tropicsapling.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">hello@tropicsapling.com</a>
+				<a href="mailto:tropicsapling@outlook.com" class="mt-4 inline-block bg-emerald-500 text-white px-4 py-2 rounded-full shadow">tropicsapling@outlook.com</a>
 			</div>
 
 			<div class="landscape:col-span-2 grid grid-rows-2 landscape:grid-cols-2 gap-4">
