@@ -35,12 +35,12 @@
 <!-- SECTION 1 - LANDING -->
 <section class="relative h-svh text-white">
 	<img src="img/forest.jpg" class="absolute object-cover w-full h-full -z-1" alt="spring tree">
-	<div class="p-8 pr-12 h-full portrait:backdrop-blur-xs">
+	<div class="p-8 landscape:p-2 landscape:2xl:p-8 landscape:2xl:pr-12 h-full backdrop-blur-xs 2xl:backdrop-blur-none">
 		<div class="flex flex-col">
-			<h1 class="text-4xl 2xl:text-7xl font-['Yatra_One',_cursive] text-center landscape:text-right text-white drop-shadow-2xl mb-6">
+			<h1 class="text-4xl 2xl:text-7xl font-['Yatra_One',_cursive] text-center 2xl:text-right text-white drop-shadow-2xl 2xl:mb-6">
 				Hi, I'm TropicSapling
 			</h1>
-			<p class="2xl:text-3xl text-center landscape:text-right text-gray-100 leading-relaxed drop-shadow-lg font-light 2xl:w-2xl ml-auto">
+			<p class="2xl:text-3xl text-center 2xl:text-right text-gray-100 2xl:leading-relaxed drop-shadow-lg font-light 2xl:w-2xl ml-auto">
 				I'm a Swedish programmer and engineer who loves to explore and tinker with technology.
 				<br><br>
 				I have been building apps, tools and websites since the mid-2010s across the full stack within domains such as automation, security and design.
@@ -58,7 +58,7 @@
 
 <section class="relative h-svh text-white" id="projects">
 	<img src="img/stars.jpg" class="absolute object-cover w-full h-full -z-1" alt="rainy nature">
-	<div class="p-8 landscape:px-40 landscape:py-16 grid grid-rows-[min-content] gap-8 h-full">
+	<div class="p-8 2xl:px-40 2xl:py-16 grid grid-rows-[min-content] gap-8 h-full">
 		<h1 class="text-center text-4xl 2xl:text-7xl font-['Yatra_One',_cursive] drop-shadow-2xl">Projects</h1>
 		{#each projects as {name, link, imag}}
 			<Project {name} {link} {imag} />
@@ -69,7 +69,7 @@
 <!-- SECTION 3 - SKILLS -->
 <section class="relative min-h-fit landscape:h-svh" id="skills">
 	<img src="img/palm.jpg" class="absolute object-cover w-full h-full -z-1" alt="palm tree and sky">
-	<div class="p-8 landscape:px-40 landscape:py-16">
+	<div class="p-8 2xl:px-40 2xl:py-16">
 		<h1 class="text-center text-4xl 2xl:text-7xl font-['Yatra_One',_cursive]">Skills</h1>
 
 		<div class="pt-8 grid gap-6 landscape:grid-cols-3 max-w-6xl mx-auto">
@@ -95,9 +95,9 @@
 <!-- SECTION 4 - CONTACT -->
 <section class="relative h-lvh" id="contact">
 	<img src="img/rainforest.jpg" class="absolute object-cover w-full h-full -z-1" alt="Rainforest">
-	<div class="p-8 landscape:px-40 landscape:py-16">
+	<div class="p-8 2xl:px-40 2xl:py-16">
 		<h1 class="text-center text-4xl 2xl:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
-		<div class="pt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
+		<div class="portrait:pt-8 2xl:pt-8 max-w-4xl mx-auto grid gap-6 landscape:grid-cols-3 items-center">
 			<div class="p-6 text-center">
 				<h2 class="text-lg font-semibold">Get in touch</h2>
 				<p class="text-sm text-gray-900 font-medium">Open to work, collaborations, and friendly chats.</p>
