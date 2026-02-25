@@ -93,7 +93,7 @@
 </section>
 
 <!-- SECTION 4 - CONTACT -->
-<section class="relative h-svh" id="contact">
+<section class="relative h-dvh" id="contact">
 	<img src="img/rainforest.jpg" class="absolute object-cover w-full h-full -z-1" alt="Rainforest">
 	<div class="p-8 landscape:px-40 landscape:py-16">
 		<h1 class="text-center text-4xl landscape:text-7xl font-['Yatra_One',_cursive]">Contact Me</h1>
